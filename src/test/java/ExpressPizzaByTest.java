@@ -25,10 +25,8 @@ public class ExpressPizzaByTest extends WebDriverSettings {
         buttonClick(expressPizzaDrinks.BUTTON_BEVERAGES_SECTION);
         buttonClick(expressPizzaDrinks.BUTTON_DRINK_GOOD_PALPI_ADD_CART);
         stringPrice = getTextByLocator(expressPizzaDrinks.PRICE_OFF_DOBRYY_PALPI);
-        System.out.println("Price of dobryy palpi :" + stringPrice);
         totalPrice += stringPriceToDouble(stringPrice);
         totalPrice = Math.round(totalPrice * 100.0) / 100.0;
-        System.out.println("Total price: " + totalPrice);
         // new WebDriverWait(driver, 1.0).until(ExpectedConditions.presenceOfAllElementsLocatedBy(expressPizzaBy.BUTTON_CHECKOUT));
         Thread.sleep(1000);
         buttonClick(expressPizzaDrinks.BUTTON_CHECKOUT);
@@ -39,7 +37,6 @@ public class ExpressPizzaByTest extends WebDriverSettings {
         Assert.assertTrue(isDisplayed(expressPizzaByCheckout.SUBTOTAL_PRICE));
         stringPrice = getTextByLocator(expressPizzaByCheckout.SUBTOTAL_PRICE);
         factprice = stringPriceToDouble(stringPrice);
-        System.out.println("fact price:" + factprice);
         Assert.assertEquals(totalPrice, factprice, 0);
     }
 

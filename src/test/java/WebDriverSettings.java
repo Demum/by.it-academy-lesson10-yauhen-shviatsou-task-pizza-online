@@ -12,9 +12,7 @@ public class WebDriverSettings {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-
     }
-
     @After
     public void closeConnection() {
         driver.quit();

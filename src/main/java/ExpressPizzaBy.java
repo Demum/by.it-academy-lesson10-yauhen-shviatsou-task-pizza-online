@@ -12,6 +12,8 @@ public class ExpressPizzaBy {
     public  final By BUTTON_CHECKOUT =  By.xpath("//a[contains(text(), 'Оформить заказ')]");
     public  final By CHECKOUT_FOUR_SEAZON_PIZZA =  By.xpath("//td[@class='desc']/a[@href='/picca-chetyre-sezona30']");
     public  final By CHECKOUT_DRINK_GOOD_PALPI =  By.xpath("//td[@class='desc']/a[@href='/picca-chetyre-sezona30']");
+    public  final By PRICE_OFF_PIZZA_FOUR_SEASONS =  By.xpath("//div[@class='rows-group Chetyre-sezona group-1274']//span[@class='size'][contains(text(), '30 см' )]/following-sibling::*");
+    public  final By PRICE_OFF_DOBRYY_PALPI =  By.xpath("//div[@class='rows-group Dobryy-Palpi-0,45-l group-1286']//span[@class='price']");
 
     public ExpressPizzaBy(WebDriver driver)   {
         this.driver=driver;
@@ -25,9 +27,6 @@ public class ExpressPizzaBy {
             return false;
         }
     }
-
-
-
 }
 
 

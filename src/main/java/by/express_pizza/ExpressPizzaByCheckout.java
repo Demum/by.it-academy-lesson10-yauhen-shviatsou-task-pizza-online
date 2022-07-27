@@ -1,3 +1,5 @@
+package by.express_pizza;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

@@ -6,7 +6,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class WebDriverSettings {
+public class BaseTest {
     protected WebDriver driver;
 
     @Before

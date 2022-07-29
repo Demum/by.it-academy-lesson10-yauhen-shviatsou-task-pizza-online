@@ -55,8 +55,7 @@ public class BaseTest {
     public Double getTotalPrice() {
         return totalPrice;
     }
-    public Double stringPriceToDouble(String s) {
-        this.stringPrice = s;
+    public static Double stringPriceToDouble(String s) {
         s = s.replaceAll("[р]", "");
         return Double.parseDouble(s);
     }

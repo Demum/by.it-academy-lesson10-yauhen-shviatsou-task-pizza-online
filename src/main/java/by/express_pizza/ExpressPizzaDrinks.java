@@ -16,7 +16,7 @@ public class ExpressPizzaDrinks {
         this.driver = driver;
     }
 
-    public void addDrinkTooCard() throws InterruptedException {
+    public void addDrinkTooCard()  {
         driver.findElement(BUTTON_BEVERAGES_SECTION).click();
         driver.findElement(By.id(BUTTON_DRINK_GOOD_PALPI_ADD_CART)).click();
     }

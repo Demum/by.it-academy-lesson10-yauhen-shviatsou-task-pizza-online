@@ -13,11 +13,14 @@ public class ExpressPizzaBy {
     public ExpressPizzaBy(WebDriver driver) {
         this.driver = driver;
     }
-public void addPizzaToCard(){
+
+    public void addPizzaToCard() {
         driver.findElement(BUTTON_PIZZA_SECTION).click();
         driver.findElement(BUTTON_FOUR_SEAZON_PIZZA_ADD_CART).click();
-}
-public String getPriceOfPizza(){
-    return driver.findElement(PRICE_OFF_PIZZA_FOUR_SEASONS).getText();
-}
+    }
+
+    public String getPriceOfPizza() {
+        return driver.findElement(PRICE_OFF_PIZZA_FOUR_SEASONS).getText();
+
+    }
 }
